@@ -19,7 +19,7 @@ def input_data():
     phone = phone_data()
     adress = adress_data()
     with open(file_name, "a", encoding="utf-8") as file:
-        file.write(f"{name}; {surname}; {phone}; {adress}\n")
+        file.write(f"{name}; {surname}; {phone}; {adress};\n")
 
 def filter_data(filter_string):
     with open(file_name, 'r', encoding="utf-8") as file:
